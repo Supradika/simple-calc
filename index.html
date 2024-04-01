@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>Calculator</title>
+
+   <style>
+      button.op_button {
+         background-color: #BB8493;
+         color: #76453B;
+         padding: 9px 5px;
+         border-radius: 30px;
+         font-weight: bold;
+      }
+      #main{
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+        margin-bottom: auto;
+        text-align: center;
+        border-radius: 40px;
+
+      }
+      .buttons_list {
+         text-align: center;
+      }
+      h2 {
+         text-align: center;
+      }
+      #res {
+         border: 2px solid #FEECE2;
+         border-radius: 2px;
+         padding: 8px 16px;
+      }
+      .calculator_content_box {
+         border: 1px solid;
+         border-radius: 30px;
+         padding: 15px;
+         width: 350px;
+         margin: 0 auto;
+      }
+      .center {
+         text-align: center;
+         padding-right: 10px;
+      }
+      input[type="number"] {
+         padding: 7px;
+         width: 105px;
+         border-radius: 4px;
+         background-color:#D37676;
+      }
+      body{
+      background-image:url(calll.jpg);
+
+      }
+   </style>
+
+</head>
+<body >
+
+<div id="main">
+   <div class="calculator_box" style="align: center;">
+      <div class="calculator_content_box">
+         <h2>Simple Calculator</h2>
+         <hr>
+
+         <input type="number" name="num_one" id="num_one" style="margin-right: 110px;" placeholder="1st number">
+
+         <input type="number" name="num_two" id="num_two" placeholder="2nd number"><br><br>
+         <div class="buttons_list">
+            <button class="op_button" onclick="addFun()">ADD</button>
+            <button class="op_button" onclick="subFun()">SUB</button>
+            <button class="op_button" onclick="mulFun()">MUL</button>
+            <button class="op_button" onclick="divFun()">DIV</button>
+            <button class="op_button" onclick="modFun()">MOD</button>
+         </div><br>
+         <p class="center"><span class="restext">Result</span><br><br>
+            <span id="res"></span>
+         </p>
+      </div>
+   </div>
+   </div>
+   <script>
+
+      function addFun() {
+         var a = document.getElementById("num_one").value;
+         var b = document.getElementById("num_two").value;
+         var r = +a + +b;
+         document.getElementById("res").innerHTML = r;
+      }
+      function subFun() {
+         var a = document.getElementById("num_one").value;
+         var b = document.getElementById("num_two").value;
+         var r = +a - +b;
+         document.getElementById("res").innerHTML = r;
+      }
+      function mulFun() {
+         var a = document.getElementById("num_one").value;
+         var b = document.getElementById("num_two").value;
+         var r = +a * +b;
+         document.getElementById("res").innerHTML = r;
+      }
+      function divFun() {
+         var a = document.getElementById("num_one").value;
+         var b = document.getElementById("num_two").value;
+         var r = +a / +b;
+         document.getElementById("res").innerHTML = r;
+      }
+      function modFun() {
+         var a = document.getElementById("num_one").value;
+         var b = document.getElementById("num_two").value;
+         var r = +a % +b;
+         document.getElementById("res").innerHTML = r;
+      }
+   </script>
+
+</body>
+</html>
