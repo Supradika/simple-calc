@@ -1,0 +1,49 @@
+button.op_button {
+    background-color: #BB8493;
+    color: #76453B;
+    padding: 9px 5px;
+    border-radius: 30px;
+    font-weight: bold;
+ }
+ #main{
+   width: 600px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 10%;
+   margin-bottom: auto;
+   text-align: center;
+   border-radius: 40px;
+
+ }
+ .buttons_list {
+    text-align: center;
+ }
+ h2 {
+    text-align: center;
+ }
+ #res {
+    border: 2px solid #FEECE2;
+    border-radius: 2px;
+    padding: 8px 16px;
+ }
+ .calculator_content_box {
+    border: 1px solid;
+    border-radius: 30px;
+    padding: 15px;
+    width: 350px;
+    margin: 0 auto;
+ }
+ .center {
+    text-align: center;
+    padding-right: 10px;
+ }
+ input[type="number"] {
+    padding: 7px;
+    width: 105px;
+    border-radius: 4px;
+    background-color:#D37676;
+ }
+ body{
+ background-image:url(calll.jpg);
+
+ }

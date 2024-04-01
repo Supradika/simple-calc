@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body >
+
+<div id="main">
+   <div class="calculator_box" style="text-align: center;">
+      <div class="calculator_content_box">
+         <h2>Simple Calculator</h2>
+         <hr>
+
+         <input type="number" name="num_one" id="num_one" style="margin-right: 110px;" placeholder="1st number">
+
+         <input type="number" name="num_two" id="num_two" placeholder="2nd number"><br><br>
+         <div class="buttons_list">
+            <button class="op_button" onclick="addFun()">ADD</button>
+            <button class="op_button" onclick="subFun()">SUB</button>
+            <button class="op_button" onclick="mulFun()">MUL</button>
+            <button class="op_button" onclick="divFun()">DIV</button>
+            <button class="op_button" onclick="modFun()">MOD</button>
+         </div><br>
+         <p class="center"><span class="restext">Result</span><br><br>
+            <span id="res"></span>
+         </p>
+      </div>
+   </div>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>
